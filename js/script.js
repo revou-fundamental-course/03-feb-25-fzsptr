@@ -3,6 +3,7 @@ function convertTemperature() {
   const fahrenheitInput = document.getElementById("fahrenheit");
   const calculationInput = document.getElementById("calculation");
   
+  // jika celsius terisi, konversi ke fahrenheit
   if (celsiusInput.value !== "") {
     const celsius = parseFloat(celsiusInput.value);
     const fahrenheit = (celsius * 9/5) + 32;
@@ -26,7 +27,7 @@ function reverseConversion() {
   const fahrenheitInput = document.getElementById("fahrenheit");
   const calculationInput = document.getElementById("calculation");
 
-  // Jika Fahrenheit terisi, konversi ke Celsius
+  // Jika fahrenheit terisi, konversi ke celsius
   if (fahrenheitInput.value !== "") {
     const fahrenheit = parseFloat(fahrenheitInput.value);
     const celsius = (fahrenheit - 32) * 5/9;
@@ -35,7 +36,7 @@ function reverseConversion() {
     // Menampilkan ouput cara kalkukasi
     calculationInput.value = `(${fahrenheit}°F - 32) * (5/9) = ${celsius}°C`;
   }
-  // Jika Celsius terisi, konversi ke Fahrenheit
+  // Jika celsius terisi, konversi ke fahrenheit
   else if (celsiusInput.value !== "") {
     const celsius = parseFloat(celsiusInput.value);
     const fahrenheit = (celsius * 9/5) + 32;

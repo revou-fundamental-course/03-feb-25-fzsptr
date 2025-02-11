@@ -69,6 +69,7 @@ button:hover {
 .f-content {
     color: purple;
     text-align: left;
+    text-decoration: none;
 }
 h4 {
     text-align: left;
