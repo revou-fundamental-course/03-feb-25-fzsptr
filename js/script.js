@@ -2,7 +2,7 @@ function convertTemperature() {
   const celsiusInput = document.getElementById("celsius");
   const fahrenheitInput = document.getElementById("fahrenheit");
   const calculationInput = document.getElementById("calculation");
-
+  
   if (celsiusInput.value !== "") {
     const celsius = parseFloat(celsiusInput.value);
     const fahrenheit = (celsius * 9/5) + 32;
